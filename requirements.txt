@@ -4,3 +4,234 @@ plotly==2.2.3
 scikit-learn==0.19.1
 six==1.11.0
 zipline===1.2.0
+#sudo apt-get install libatlas-base-dev python-dev gfortran pkg-config libfreetype6-dev hdf5-tools
+
+
+#conda create -n trading2 python=3.6.3
+conda activate trading2
+#conda install -c conda-forge zipline
+conda install -c anaconda ipykernel
+python -m ipykernel install --user --name=trading2
+conda install matplotlib
+
+
+#### after trial and error, this seems to work:
+# packages in environment at /home/nathan/anaconda3/envs/trading2:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+alembic                   1.4.3                    pypi_0    pypi
+backcall                  0.2.0                      py_0  
+bcolz                     0.12.1                   pypi_0    pypi
+blas                      1.0                         mkl  
+bottleneck                1.3.2                    pypi_0    pypi
+ca-certificates           2020.12.8            h06a4308_0  
+certifi                   2020.12.5        py36h06a4308_0  
+contextlib2               0.6.0.post1              pypi_0    pypi
+cycler                    0.10.0                   py36_0  
+cyordereddict             1.0.0                    pypi_0    pypi
+cython                    0.29.21                  pypi_0    pypi
+dbus                      1.13.18              hb2f20db_0  
+decorator                 4.4.2                      py_0  
+empyrical                 0.5.5                    pypi_0    pypi
+expat                     2.2.10               he6710b0_2  
+fontconfig                2.13.0               h9420a91_0  
+freetype                  2.10.4               h5ab3b9f_0  
+glib                      2.63.1               h5a9c865_0  
+gst-plugins-base          1.14.0               hbbd80ab_1  
+gstreamer                 1.14.0               hb453b48_1  
+icu                       58.2                 he6710b0_3  
+intel-openmp              2020.2                      254  
+intervaltree              3.1.0                    pypi_0    pypi
+ipykernel                 5.3.4            py36h5ca1d4c_0    anaconda
+ipython                   7.16.1           py36h5ca1d4c_0  
+ipython_genutils          0.2.0              pyhd3eb1b0_1  
+jedi                      0.17.0                   py36_0  
+jpeg                      9b                   h024ee3a_2  
+jupyter_client            6.1.7                      py_0  
+jupyter_core              4.7.0            py36h06a4308_0  
+kiwisolver                1.3.0            py36h2531618_0  
+lcms2                     2.11                 h396b838_0  
+libedit                   3.1.20191231         h14c3975_1  
+libffi                    3.2.1             hf484d3e_1007  
+libgcc-ng                 9.1.0                hdf63c60_0  
+libpng                    1.6.37               hbc83047_0  
+libsodium                 1.0.18               h7b6447c_0  
+libstdcxx-ng              9.1.0                hdf63c60_0  
+libtiff                   4.1.0                h2733197_1  
+libuuid                   1.0.3                h1bed415_2  
+libxcb                    1.14                 h7b6447c_0  
+libxml2                   2.9.10               hb55368b_3  
+logbook                   1.5.3                    pypi_0    pypi
+lru-dict                  1.1.6                    pypi_0    pypi
+lz4-c                     1.9.2                heb0550a_3  
+mako                      1.1.3                    pypi_0    pypi
+matplotlib                3.3.2                h06a4308_0  
+matplotlib-base           3.3.2            py36h817c723_0  
+mkl                       2020.2                      256  
+mkl-service               2.3.0            py36he8ac12f_0  
+mkl_fft                   1.2.0            py36h23d657b_0  
+mkl_random                1.1.1            py36h0573a6f_0  
+multipledispatch          0.6.0                    pypi_0    pypi
+ncurses                   6.2                  he6710b0_1  
+networkx                  1.11                     pypi_0    pypi
+numexpr                   2.7.1                    pypi_0    pypi
+numpy                     1.16.0                   pypi_0    pypi
+olefile                   0.46                     py36_0  
+openssl                   1.0.2u               h7b6447c_0  
+pandas                    0.18.1                   pypi_0    pypi
+pandas-datareader         0.5.0                    pypi_0    pypi
+parso                     0.8.1              pyhd3eb1b0_0  
+patsy                     0.5.1                    pypi_0    pypi
+pcre                      8.44                 he6710b0_0  
+pexpect                   4.8.0              pyhd3eb1b0_3  
+pickleshare               0.7.5           pyhd3eb1b0_1003  
+pillow                    8.0.1            py36he98fc37_0  
+pip                       20.3.3           py36h06a4308_0  
+prompt-toolkit            3.0.8                      py_0  
+ptyprocess                0.6.0              pyhd3eb1b0_2  
+pygments                  2.7.3              pyhd3eb1b0_0  
+pyparsing                 2.4.7                      py_0  
+pyqt                      5.9.2            py36h05f1152_2  
+python                    3.6.3                h6c0c0dc_5  
+python-dateutil           2.8.1                      py_0  
+python-editor             1.0.4                    pypi_0    pypi
+pytz                      2020.5                   pypi_0    pypi
+pyzmq                     20.0.0           py36h2531618_1  
+qt                        5.9.6                h8703b6f_2  
+readline                  7.0                  h7b6447c_5  
+requests-file             1.5.1                    pypi_0    pypi
+requests-ftp              0.3.1                    pypi_0    pypi
+scipy                     1.5.4                    pypi_0    pypi
+setuptools                51.0.0           py36h06a4308_2  
+sip                       4.19.8           py36hf484d3e_0  
+six                       1.15.0           py36h06a4308_0  
+sortedcontainers          2.3.0                    pypi_0    pypi
+sqlalchemy                1.3.22                   pypi_0    pypi
+sqlite                    3.33.0               h62c20be_0  
+statsmodels               0.9.0                    pypi_0    pypi
+tables                    3.6.1                    pypi_0    pypi
+tk                        8.6.10               hbc83047_0  
+tornado                   6.1              py36h27cfd23_0  
+traitlets                 4.3.3                    py36_0  
+wcwidth                   0.2.5                      py_0  
+wheel                     0.36.2             pyhd3eb1b0_0  
+xz                        5.2.5                h7b6447c_0  
+zeromq                    4.3.3                he6710b0_3  
+zipline                   1.2.0                    pypi_0    pypi
+zlib                      1.2.11               h7b6447c_3  
+zstd                      1.4.5                h9ceee32_0  
+
+
+
+
+ pip install --upgrade --force-reinstall pandas==0.18.1
+ # packages in environment at /home/nathan/anaconda3/envs/trading2:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+alembic                   1.4.3                    pypi_0    pypi
+backcall                  0.2.0                      py_0  
+bcolz                     0.12.1                   pypi_0    pypi
+blas                      1.0                         mkl  
+bottleneck                1.3.2                    pypi_0    pypi
+ca-certificates           2020.12.8            h06a4308_0  
+certifi                   2020.12.5        py36h06a4308_0  
+contextlib2               0.6.0.post1              pypi_0    pypi
+cycler                    0.10.0                   py36_0  
+cyordereddict             1.0.0                    pypi_0    pypi
+cython                    0.29.21                  pypi_0    pypi
+dbus                      1.13.18              hb2f20db_0  
+decorator                 4.4.2                      py_0  
+empyrical                 0.5.5                    pypi_0    pypi
+expat                     2.2.10               he6710b0_2  
+fontconfig                2.13.0               h9420a91_0  
+freetype                  2.10.4               h5ab3b9f_0  
+glib                      2.63.1               h5a9c865_0  
+gst-plugins-base          1.14.0               hbbd80ab_1  
+gstreamer                 1.14.0               hb453b48_1  
+icu                       58.2                 he6710b0_3  
+intel-openmp              2020.2                      254  
+intervaltree              3.1.0                    pypi_0    pypi
+ipykernel                 5.3.4            py36h5ca1d4c_0    anaconda
+ipython                   7.16.1           py36h5ca1d4c_0  
+ipython_genutils          0.2.0              pyhd3eb1b0_1  
+jedi                      0.17.0                   py36_0  
+jpeg                      9b                   h024ee3a_2  
+jupyter_client            6.1.7                      py_0  
+jupyter_core              4.7.0            py36h06a4308_0  
+kiwisolver                1.3.0            py36h2531618_0  
+lcms2                     2.11                 h396b838_0  
+libedit                   3.1.20191231         h14c3975_1  
+libffi                    3.2.1             hf484d3e_1007  
+libgcc-ng                 9.1.0                hdf63c60_0  
+libgfortran-ng            7.3.0                hdf63c60_0  
+libpng                    1.6.37               hbc83047_0  
+libsodium                 1.0.18               h7b6447c_0  
+libstdcxx-ng              9.1.0                hdf63c60_0  
+libtiff                   4.1.0                h2733197_1  
+libuuid                   1.0.3                h1bed415_2  
+libxcb                    1.14                 h7b6447c_0  
+libxml2                   2.9.10               hb55368b_3  
+logbook                   1.5.3                    pypi_0    pypi
+lru-dict                  1.1.6                    pypi_0    pypi
+lz4-c                     1.9.2                heb0550a_3  
+mako                      1.1.3                    pypi_0    pypi
+matplotlib                3.3.2                h06a4308_0  
+matplotlib-base           3.3.2            py36h817c723_0  
+mkl                       2020.2                      256  
+mkl-service               2.3.0            py36he8ac12f_0  
+mkl_fft                   1.2.0            py36h23d657b_0  
+mkl_random                1.1.1            py36h0573a6f_0  
+multipledispatch          0.6.0                    pypi_0    pypi
+ncurses                   6.2                  he6710b0_1  
+networkx                  1.11                     pypi_0    pypi
+numexpr                   2.7.1                    pypi_0    pypi
+numpy                     1.16.0                   pypi_0    pypi
+olefile                   0.46                     py36_0  
+openssl                   1.0.2u               h7b6447c_0  
+pandas                    0.18.1                   pypi_0    pypi
+pandas-datareader         0.5.0                    pypi_0    pypi
+parso                     0.8.1              pyhd3eb1b0_0  
+patsy                     0.5.1                    pypi_0    pypi
+pcre                      8.44                 he6710b0_0  
+pexpect                   4.8.0              pyhd3eb1b0_3  
+pickleshare               0.7.5           pyhd3eb1b0_1003  
+pillow                    8.0.1            py36he98fc37_0  
+pip                       20.3.3           py36h06a4308_0  
+prompt-toolkit            3.0.8                      py_0  
+ptyprocess                0.6.0              pyhd3eb1b0_2  
+pygments                  2.7.3              pyhd3eb1b0_0  
+pyparsing                 2.4.7                      py_0  
+pyqt                      5.9.2            py36h05f1152_2  
+python                    3.6.3                h6c0c0dc_5  
+python-dateutil           2.8.1                      py_0  
+python-editor             1.0.4                    pypi_0    pypi
+pytz                      2020.5                   pypi_0    pypi
+pyzmq                     20.0.0           py36h2531618_1  
+qt                        5.9.6                h8703b6f_2  
+readline                  7.0                  h7b6447c_5  
+requests-file             1.5.1                    pypi_0    pypi
+requests-ftp              0.3.1                    pypi_0    pypi
+scipy                     1.5.4                    pypi_0    pypi
+seaborn                   0.8.1                    py36_0  
+setuptools                51.0.0           py36h06a4308_2  
+sip                       4.19.8           py36hf484d3e_0  
+six                       1.15.0           py36h06a4308_0  
+sortedcontainers          2.3.0                    pypi_0    pypi
+sqlalchemy                1.3.22                   pypi_0    pypi
+sqlite                    3.33.0               h62c20be_0  
+statsmodels               0.9.0                    pypi_0    pypi
+tables                    3.6.1                    pypi_0    pypi
+tk                        8.6.10               hbc83047_0  
+tornado                   6.1              py36h27cfd23_0  
+traitlets                 4.3.3                    py36_0  
+wcwidth                   0.2.5                      py_0  
+wheel                     0.36.2             pyhd3eb1b0_0  
+xz                        5.2.5                h7b6447c_0  
+zeromq                    4.3.3                he6710b0_3  
+zipline                   1.2.0                    pypi_0    pypi
+zlib                      1.2.11               h7b6447c_3  
+zstd                      1.4.5                h9ceee32_0  
+
+ 
